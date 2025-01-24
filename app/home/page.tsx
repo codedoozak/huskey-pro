@@ -1,7 +1,7 @@
 import React from "react";
 
 type Props = {
-  source: "codedoozak.ir";
+  source?: "codedoozak.ir";
 };
 
 export default function Home({ source }: Props) {

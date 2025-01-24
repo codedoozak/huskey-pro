@@ -3,7 +3,7 @@ import HomePage from "../app/home/page";
 
 describe("HomePage", () => {
   it("renders a heading", () => {
-    render(<HomePage />);
+    render(<HomePage source="any" />);
     const heading = screen.getByRole("heading", {
       name: /welcome to codedoozak.ir huskey tutorial/i,
     });
