@@ -5,3 +5,22 @@ echo "Current branch: $branch_name"
 
 npm run lint
 npm run test 
+
+
+
+if ! [[ "$branch_name" =~ ^feature\/|^bugfix\/ ]]; then
+  echo "Branch name must start with 'feature/' or 'bugfix/'"
+#   exit 1
+fi
+
+
+if ! [[ "$branch_name" =~ (feature|bugfix)/.+-ticket$ ]]; then
+  echo "Error: Branch name must end with '-ticket'"
+#   exit 1
+fi
+
+
+if ! [[ "$branch_name" =~ (feature|bugfix)/.+-important ]]; then
+  echo "Error: Branch name must contain '-important'"
+#   exit 1
+fi

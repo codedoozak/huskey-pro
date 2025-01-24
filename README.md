@@ -32,3 +32,18 @@ npx husky add .husky/pre-commit "npm run lint"
 npm run lint
 
 ```
+
+```
+Explanation
+Regex Syntax:
+
+^: Matches the start of the string.
+$: Matches the end of the string.
+.+: Matches one or more characters.
+|: Acts as an OR operator in regex.
+Branch Name Patterns:
+
+^(feature|bugfix)/: Ensures the branch starts with feature/ or bugfix/.
+-important: Ensures the branch contains -important.
+-ticket$: Ensures the branch ends with -ticket.
+```
