@@ -1,5 +1,7 @@
 #!/bin/sh
 
+branch_name=$(git rev-parse --abbrev-ref HEAD)
+echo "Current branch: $branch_name"
 
 npm run lint
 npm run test 
