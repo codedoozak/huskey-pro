@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import HomePage from "../app/home/page";
+import Welcom from "../app/components/welcom";
 
-describe("HomePage", () => {
+describe("Welcom", () => {
   it("renders a heading", () => {
-    render(<HomePage source="codedoozak.ir" />);
+    render(<Welcom source="codedoozak.ir" />);
     const heading = screen.getByRole("heading", {
       name: /welcome to codedoozak.ir huskey tutorial/i,
     });
