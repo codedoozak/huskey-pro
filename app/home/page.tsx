@@ -1,4 +1,3 @@
-import React from "react";
 import Welcom from "../components/welcom";
 
 export default async function Home() {
