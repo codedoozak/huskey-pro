@@ -1,18 +1,10 @@
 import React from "react";
+import Welcom from "../components/welcom";
 
-type Props = {
-  source?: "codedoozak.ir";
-};
-
-export default function Home({ source }: Props) {
-  console.log(source);
-
+export default async function Home() {
   return (
     <div>
-      <h1 className="bg-sky-500 py-4 text-center">
-        welcome to codedoozak.ir huskey tutorial
-      </h1>
-      ;
+      <Welcom source="codedoozak.ir" />
     </div>
   );
 }
